@@ -1,30 +1,34 @@
+## Підсумковий проєкт 5-го модуля JavaRush
+## Виконавець: Колибаба Ігор Володимирович
+
 ## [REST API](http://localhost:8080/doc)
 
-## Концепция:
+## Концепція:
 
 - Spring Modulith
-    - [Spring Modulith: достигли ли мы зрелости модульности](https://habr.com/ru/post/701984/)
+    - [Spring Modulith: чи досягли ми зрілості модульності](https://habr.com/ua/post/701984/)
     - [Introducing Spring Modulith](https://spring.io/blog/2022/10/21/introducing-spring-modulith)
     - [Spring Modulith - Reference documentation](https://docs.spring.io/spring-modulith/docs/current-SNAPSHOT/reference/html/)
 
-```
+````
   url: jdbc:postgresql://localhost:5432/jira
   username: jira
   password: JiraRush
-```
+````
 
-- Есть 2 общие таблицы, на которых не fk
-    - _Reference_ - справочник. Связь делаем по _code_ (по id нельзя, тк id привязано к окружению-конкретной базе)
-    - _UserBelong_ - привязка юзеров с типом (owner, lead, ...) к объекту (таска, проект, спринт, ...). FK вручную будем
-      проверять
+- Є 2 загальні таблиці, на яких не fk
+    - _Reference_ – довідник. Зв'язок робимо по _code_ (за id не можна, тк id прив'язано до оточення-конкретної бази)
+    - _UserBelong_ - прив'язка користувачів із типом (owner, lead, ...) до об'єкту (тяга, проект, спринт, ...). FK вручну будемо
+      перевіряти
 
 ## Аналоги
 
 - https://java-source.net/open-source/issue-trackers
 
-## Тестирование
+## Тестування
 
-- https://habr.com/ru/articles/259055/
+- https://habr.com/ua/articles/259055/
 
-Список выполненных задач:
-...
+Список виконаних завдань:
+- розібрався зі структурою проєкту;
+- видалив соціальні мережі: vk, yandex;
